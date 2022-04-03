@@ -1,0 +1,46 @@
+Ping이란 상대와의 네트워크 연결을 확인한다
+
+byte=몇 byte를 보냈는지 나타냄
+
+TTL=테스트를 위한 해당 패킷이 얼마동안 유효한지에 대해 체크
+36ms, 39ms 라는 숫자는 내가 상대방에게 보내고 나한테 다시 돌아오는데 걸리는 시간
+
+
+Tracert
+
+내 컴퓨터의 패킷이 상대편에 전달되는 경로에 대한 상세정보를 알려준다.
+호스트와 목적지 주소사이의 모든 Hop을 보여준다.
+이것을 사용해서 상대방에게 전송되는 라우팅 경로 확인 가능.
+linux-Traceroute 명령어로 사용가능
+
+Tracert Command
+원격 호스트 도메인 입력을 입력학 엔터치면 바로 결과확인가능
+
+tracert www.sejong.ac.kr
+
+최대 30홉 이상의 kns.kornet.net으로 가는 경로 추적
+
+destination 호스트 사이에있는 모든 라우터에게 메시지를 주고받으면서 걸리는 시간을 체크.
+
+1line 내 컴퓨터의 ip address
+2~6 서비스 제공업자의 IP Address 인터넷 서비스 제공업자 ip
+
+whois데이터베이스 사용하면된다.
+dnstools.com에서 확인할 ipaddress 입력 
+
+종종 *** request time out 요청에 대한 타임아웃 뜰때가있음이유 해당라우터가 보안을 이유로 관련정보 제공하지않음
+IPconfig
+Ping
+Tracert 를사용
+
+인터넷 연결시 필요한정보
+
+ip주소
+라우터주소
+DHCP를 사용하는 DNS주소
+
+DHCP Dynamic Host Configuration Protocol
+우리의 노트북이 DHCP가되고. 가용한 IP Address 첫번쨰 라우터의 IP주소 그 다음에 DNS서버의 이름 그다음에 IP주소를 포함하는 응답메세지를 만들어서 보내게된다.
+
+웹서버와 TCP SYNACK으로 소켓 전달.
+HTTP Reply는 라우터를 거쳐 클라이어늩에게 전달.
